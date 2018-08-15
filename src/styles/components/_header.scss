@@ -1,0 +1,17 @@
+.header {
+    background: $blue-dark-3;
+    margin-bottom: $xl-size;
+    padding: $m-size 0;
+    color: $grey-light-1;
+
+    &__title {
+        text-transform: uppercase;
+        margin-bottom: $m-size;
+        font-size: $l-size;
+    }
+
+    &__subtitle {
+        color: $blue-light-1;
+    }
+}
+

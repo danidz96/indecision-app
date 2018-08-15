@@ -1,0 +1,58 @@
+.widget {
+    box-shadow: $shadow-2;
+    margin-bottom: $xl-size;
+    background-color: lighten($blue-dark-2, $amount: 8%);
+}
+
+.widget-header {
+    width: 100%;
+    background: $blue-dark-4;
+    display: flex;
+    color: $blue-light-1;
+    padding: $m-size ;
+    justify-content: space-between;
+}
+
+.widget-content {
+
+    &__message {
+        text-align: center;
+        color: $blue-light-1;
+        font-size: 2rem;
+        margin: 0;
+        overflow: hidden;
+        padding: $xl-size;
+    }
+
+    &__form {
+        display: flex;
+        justify-content: space-between;
+        padding: $m-size;
+
+        &--input{
+            flex-grow: 3;
+            background: transparent;
+            border: none;
+            outline: none;
+            margin-right: $m-size;
+            background: $blue-dark-2;
+            color: $blue-light-1;
+
+            &:focus {
+                border-bottom: 3px solid $blue-dark-1;
+            }
+        }
+    }
+
+    &__add-option {
+        justify-content: space-between;
+        border-top: 1px solid $blue-dark-4;
+
+        &--error {
+            color: $blue-light-1;
+            padding: 0;
+            border: none;
+            text-align: center;
+        }
+    }
+}

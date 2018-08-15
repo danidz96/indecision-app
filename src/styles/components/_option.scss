@@ -1,0 +1,10 @@
+.option {
+    display: flex;
+    justify-content: space-between;
+    color: $white;
+    padding: 2.5rem $m-size;
+
+    &:not(:last-child) {
+        border-bottom: 1px solid $blue-dark-4;
+    }
+}
