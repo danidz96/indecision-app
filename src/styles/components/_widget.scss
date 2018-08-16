@@ -28,13 +28,14 @@
         display: flex;
         justify-content: space-between;
         padding: $m-size;
+        flex-direction: column;
 
         &--input{
             flex-grow: 3;
             background: transparent;
             border: none;
             outline: none;
-            margin-right: $m-size;
+            margin-bottom: $m-size;
             background: $blue-dark-2;
             color: $blue-light-1;
 
@@ -55,5 +56,18 @@
             text-align: center;
             margin-bottom: 0; 
         }
+    }
+}
+
+@media (min-width: $desktop-breakpoint) {
+
+    .widget-content__form {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .widget-content__form--input {
+        margin: 0;
+        margin-right: $m-size; 
     }
 }
