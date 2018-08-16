@@ -7,4 +7,9 @@
     &:not(:last-child) {
         border-bottom: 1px solid $blue-dark-4;
     }
+
+    &__text {
+        word-break: break-all;
+        margin: 0;
+    }
 }

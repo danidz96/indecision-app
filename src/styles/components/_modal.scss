@@ -1,0 +1,36 @@
+.ReactModal__Overlay {
+    opacity: 0;
+    transition: opacity .2s ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+    &--after-open {
+        opacity: 1;
+    }
+    &--before-close {
+        opacity: 0;
+    }
+}
+
+.modal {
+    background: $blue-dark-2;
+    padding: $l-size $xl-size;
+    max-width: 50rem;
+    outline: none;
+    text-align: center;
+
+    &__title {
+        color: $blue-light-2;
+    }
+
+    &__body {
+        color: $white;
+        font-size: $l-size;
+        margin: $xl-size 0;
+        word-break: break-all;
+    }
+
+
+}
